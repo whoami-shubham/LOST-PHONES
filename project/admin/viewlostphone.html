@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> form </title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+<div class="box">
+	<h1> Search Your Lost Phone </h1>
+<form name="search" action="search.php" method="post">
+	<p> <label>IMEI No &nbsp &nbsp </label><input type="text" name="imei" placeholder="IMEI No" required="yes" class="in"></p>
+	<p> <label>Brand &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp&nbsp&nbsp</label><input type="text" name="brand" placeholder="Brand" required="yes" class="in"></p>
+	<p><input type="submit" name="submit" class="button" value="Search"></p>
+</form>
+<form name="view" action="viewlostphone.php" method="post">
+	<p><input type="submit" name="submit" class="button" value="View all List"></p>
+</form>
+</div>
+</body>
+</html>

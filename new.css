@@ -1,0 +1,30 @@
+.in{
+width: 60%;
+height:25px;
+border-radius: 5px;
+padding: 5px;
+outline: none;
+color: #a6a6a6;
+border:none;
+border:1px solid #cccccc;
+}
+.button{
+	background: #4267b2;
+        border-radius: 5px;
+        color: white;
+        height: 30px;
+        text-align: center;
+        width: 70px;
+        
+}
+.box{
+	border: 2px solid #ccc;
+	width: 30%;
+	text-align: center;
+	margin-left: 35%;
+	margin-top: 10%;
+	background: #fcfcfc;
+}
+body{
+ background: #4267b2;
+}
