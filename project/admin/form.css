@@ -1,5 +1,9 @@
+body{
+ background-image: url('m.png');
+}
+
 .in{
-width: 60%;
+width: 70%;
 height:25px;
 border-radius: 5px;
 padding: 5px;
@@ -19,7 +23,7 @@ border:1px solid #cccccc;
 }
 .box{
 	border: 2px solid #ccc;
-	width: 30%;
+	width: 40%;
 	text-align: center;
 	margin-left: 35%;
 	margin-top: 10%;
@@ -27,6 +31,16 @@ border:1px solid #cccccc;
         border-radius: 10px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
-body{
- background-image: url('banner.png');
-}
+  @media screen and (max-width: 900px){
+            div.box{
+                   width:70%;
+                   border: 2px solid #ccc;
+	           text-align: center;
+                   margin-top:5%;
+	           margin-left:15%;
+                   padding:5%;
+	           background: #FFF;
+                   border-radius: 10px;
+                   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+                }
+          }

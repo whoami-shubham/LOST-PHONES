@@ -29,7 +29,7 @@ if(arrysize>0){ ?>
 <th><?php echo htmlspecialchars($array[5]); ?></th>
 <th><?php echo htmlspecialchars($array[6]); ?></th>
 <th><?php echo htmlspecialchars($array[7]); ?></th>
-<? } ?>
+<?php } ?>
 	
 </tr>
 </table>

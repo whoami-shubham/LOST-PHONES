@@ -10,7 +10,7 @@ for($j=0;$j<8;$j++){
   <?php	echo '<div style="width:8%;height:8%;border: 1px solid black;float:left;';
   ?> 
 
- <?php 
+ <?php
  if($k%2!=0){
  echo '"></div>';
  }

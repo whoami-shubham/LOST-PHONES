@@ -1,4 +1,4 @@
-<?php
+<?
 #create connection
 $con=mysqli_connect("localhost","root","","lostphone");
 
@@ -17,16 +17,16 @@ $con=mysqli_connect("localhost","root","","lostphone");
 #execute query
 
 $result = mysqli_query($con,$query);
-
+$num = mysqli_num_rows($result);
 #echo "<br>";
-#echo $num;
+echo $num;
 if($num==1){
 	echo "sucessfully logged in";
 	header('location:dashboard.php');
 }
 else{
 header('location:form.html');
-}
-#$con.close();
+} 
+
 
 ?>
