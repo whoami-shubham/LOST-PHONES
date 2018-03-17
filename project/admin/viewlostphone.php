@@ -1,10 +1,6 @@
 
 <?
 $con=mysqli_connect("localhost","root","","lostphone"); # connect to db
-/*
-* echo $imei = $_POST['imei'] ."<br>";
-* echo $brand = $_POST['brand']."<br>";
-*/
 #write query
 $query="SELECT * FROM lostmobile ";
 /*
@@ -30,14 +26,14 @@ $array=mysqli_fetch_array($result);
 <?
 do{ ?>
 <tr style="height: 70px">
-<th><?echo $array[0]; ?></th>
-<th><?echo $array[1]; ?></th>
-<th><?echo $array[2]; ?></th>
-<th><?echo $array[3]; ?></th>
-<th><?echo $array[4]; ?></th>
-<th><?echo $array[5]; ?></th>
-<th><?echo $array[6]; ?></th>
-<th><?echo $array[7]; ?></th>	
+<th><?echo htmlspecialchars($array[0]); ?></th>
+<th><?echo htmlspecialchars($array[1]); ?></th>
+<th><?echo htmlspecialchars($array[2]); ?></th>
+<th><?echo htmlspecialchars($array[3]); ?></th>
+<th><?echo htmlspecialchars($array[4]); ?></th>
+<th><?echo htmlspecialchars($array[5]); ?></th>
+<th><?echo htmlspecialchars($array[6]); ?></th>
+<th><?echo htmlspecialchars($array[7]); ?></th>	
 </tr>
 <? } while($array=mysqli_fetch_array($result));
  ?>

@@ -4,9 +4,9 @@ $con=mysqli_connect("localhost","root","","lostphone");
 
 #retrive : form parameters
 
- $username=$_POST['username'];
+ $username=htmlspecialchars($_POST['username']);
 #echo "<br>";
- $password=$_REQUEST['password']; # universal acceptable
+ $password=htmlspecialchars($_REQUEST['password']); # universal acceptable
 
 #create query
 
@@ -17,7 +17,6 @@ $con=mysqli_connect("localhost","root","","lostphone");
 #execute query
 
 $result = mysqli_query($con,$query);
-$num=mysqli_num_rows($result);
 
 #echo "<br>";
 #echo $num;

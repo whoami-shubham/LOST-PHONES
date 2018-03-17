@@ -1,12 +1,12 @@
 <?php
 $con=mysqli_connect("localhost","root","","lostphone"); # connect to db
-$imei = $_POST['imei'];
-$name = $_POST['name'];
-$brand = $_POST['brand'];
-$phnumber = $_POST['phnumber'];
-$address = $_POST['address'];
-$dop = $_POST['dop'];
-$dol = $_POST['dol'];
+$imei = htmlspecialchars($_POST['imei']);      # htmlspecialchars() is used to prevent xss attacks
+$name = htmlspecialchars($_POST['name']);
+$brand = htmlspecialchars($_POST['brand']);
+$phnumber = htmlspecialchars($_POST['phnumber']);
+$address = htmlspecialchars($_POST['address']);
+$dop = htmlspecialchars($_POST['dop']);
+$dol = htmlspecialchars($_POST['dol']);
 $shopname = $_POST['shopname'];
 /*   these extra code is for debugging  just remove the comments and test your code  !
  echo $imei = $_POST['imei'] ."<br>";
