@@ -1,4 +1,4 @@
-<?
+<?php
 echo '<h1 style="text-align:center">Chess Board</h1>';
 
 $i;$j;$k=1;
@@ -7,10 +7,10 @@ for($i=0;$i<8;$i++){
 
 for($j=0;$j<8;$j++){
 	?>
-  <?	echo '<div style="width:8%;height:8%;border: 1px solid black;float:left;';
+  <?php	echo '<div style="width:8%;height:8%;border: 1px solid black;float:left;';
   ?> 
 
- <? 
+ <?php 
  if($k%2!=0){
  echo '"></div>';
  }
@@ -22,7 +22,7 @@ for($j=0;$j<8;$j++){
  	$k++;
  }
  ?>
-	<?
+	<?php
 }
 #echo '<br>';
 echo '<div style="clear:both"></div>';

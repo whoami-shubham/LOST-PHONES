@@ -1,5 +1,5 @@
 
-<?
+<?php
 $con=mysqli_connect("localhost","root","","lostphone"); # connect to db
 #write query
 $query="SELECT * FROM lostmobile ";
@@ -23,18 +23,18 @@ $array=mysqli_fetch_array($result);
 <th>address</th>
 <th>phone number</th>
 </tr>
-<?
+<?php
 do{ ?>
 <tr style="height: 70px">
-<th><?echo htmlspecialchars($array[0]); ?></th>
-<th><?echo htmlspecialchars($array[1]); ?></th>
-<th><?echo htmlspecialchars($array[2]); ?></th>
-<th><?echo htmlspecialchars($array[3]); ?></th>
-<th><?echo htmlspecialchars($array[4]); ?></th>
-<th><?echo htmlspecialchars($array[5]); ?></th>
-<th><?echo htmlspecialchars($array[6]); ?></th>
-<th><?echo htmlspecialchars($array[7]); ?></th>	
+<th><?php echo htmlspecialchars($array[0]); ?></th>
+<th><?php echo htmlspecialchars($array[1]); ?></th>
+<th><?php echo htmlspecialchars($array[2]); ?></th>
+<th><?php echo htmlspecialchars($array[3]); ?></th>
+<th><?php echo htmlspecialchars($array[4]); ?></th>
+<th><?php echo htmlspecialchars($array[5]); ?></th>
+<th><?php echo htmlspecialchars($array[6]); ?></th>
+<th><?php echo htmlspecialchars($array[7]); ?></th>	
 </tr>
-<? } while($array=mysqli_fetch_array($result));
+<?php } while($array=mysqli_fetch_array($result));
  ?>
 </table>

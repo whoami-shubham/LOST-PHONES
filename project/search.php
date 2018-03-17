@@ -1,4 +1,4 @@
-<?
+<?php
 $con=mysqli_connect("localhost","root","","lostphone"); # connect to db
 $search=htmlspecialchars($_POST['search']);
 
@@ -19,16 +19,16 @@ $array=mysqli_fetch_array($result);
 <th>phone number</th>
 </tr>
 <tr>
-<?
+<?php
 if(arrysize>0){ ?>
-<th><?echo htmlspecialchars($array[0]); ?></th>
-<th><?echo htmlspecialchars($array[1]); ?></th>
-<th><?echo htmlspecialchars($array[2]); ?></th>
-<th><?echo htmlspecialchars($array[3]); ?></th>
-<th><?echo htmlspecialchars($array[4]); ?></th>
-<th><?echo htmlspecialchars($array[5]); ?></th>
-<th><?echo htmlspecialchars($array[6]); ?></th>
-<th><?echo htmlspecialchars($array[7]); ?></th>
+<th><?php echo htmlspecialchars($array[0]); ?></th>
+<th><?php echo htmlspecialchars($array[1]); ?></th>
+<th><?php echo htmlspecialchars($array[2]); ?></th>
+<th><?php echo htmlspecialchars($array[3]); ?></th>
+<th><?php echo htmlspecialchars($array[4]); ?></th>
+<th><?php echo htmlspecialchars($array[5]); ?></th>
+<th><?php echo htmlspecialchars($array[6]); ?></th>
+<th><?php echo htmlspecialchars($array[7]); ?></th>
 <? } ?>
 	
 </tr>

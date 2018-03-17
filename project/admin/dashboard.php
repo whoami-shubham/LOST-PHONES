@@ -1,4 +1,4 @@
-<?
+<?php
 
 echo " <h2 style='color:green'>You Sucessfully Logged in</h2>";
 echo "<br>";
