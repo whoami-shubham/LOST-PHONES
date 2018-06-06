@@ -35,3 +35,18 @@ This small project was made by me after 8 hrs of workshop session of html css an
 
 
 or you can customize database according to your convenience .
+
+# Home
+![Alt text](home.png?raw=true "Title")
+
+# registration page
+![Alt text](register.png?raw=true "Title")
+
+# Log in page
+![Alt text](login.png?raw=true "Title")
+
+# index 
+![Alt text](index.png?raw=true "Title")
+
+# search
+![Alt text](search.png?raw=true "Title")
